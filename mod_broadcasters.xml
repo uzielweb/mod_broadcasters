@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- /** * @copyright Copyright (c) 2014 Ponto Mega (http://pontomega.com.br). All rights reserved. * @license GNU General Public License version 2 or later; see LICENSE.txt */ -->
+<extension type="module" version="3.0" client="site" method="upgrade">
+  <name>PontoMega Broadcasters</name>
+  <author>Uziel Almeida Oliveira</author>
+  <creationDate>August 2014</creationDate>
+  <copyright>Copyright (c) 2014 PontoMega. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <authorEmail>contato@pontomega.com.br</authorEmail>
+  <authorUrl>http://pontomega.com.br</authorUrl>
+  <version>1.0.0</version>
+  <description>
+    <![CDATA[ ]]>
+  </description>
+  <files>
+    <filename module="mod_broadcasters">mod_broadcasters.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl</folder>
+  </files>
+  <media folder="media" destination="mod_broadcasters">
+    <folder>css</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <filename>index.html</filename>
+  </media>
+  <languages>
+    <language tag="en-GB">en-GB.mod_broadcasters.ini</language>
+    <language tag="en-GB">en-GB.mod_broadcasters.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="horarios" type="Repeatable" icon="list" description="Horários de transmissão" label="Horários" default="">
+          <fields name="params">
+            <fieldset hidden="true" name="horarios_modal" repeat="true">
+              <field name="diasdasemana" label="Dias" size="30" type="list">
+                <option value="segundaasexta">Segunda a Sexta</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+              </field>
+              <field name="inicio" label="Início" type="list">
+                <option value="0:00">0:00</option>
+                <option value="0:30">0:30</option>
+                <option value="1:00">1:00</option>
+                <option value="1:30">1:30</option>
+                <option value="2:00">2:00</option>
+                <option value="2:30">2:30</option>
+                <option value="3:00">3:00</option>
+                <option value="3:30">3:30</option>
+                <option value="4:00">4:00</option>
+                <option value="4:30">4:30</option>
+                <option value="5:00">5:00</option>
+                <option value="5:30">5:30</option>
+                <option value="6:00">6:00</option>
+                <option value="6:30">6:30</option>
+                <option value="7:00">7:00</option>
+                <option value="7:30">7:30</option>
+                <option value="8:00">8:00</option>
+                <option value="8:30">8:30</option>
+                <option value="9:00">9:00</option>
+                <option value="9:30">9:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                </field>
+                <field name="final" label="Final" type="list">
+                <option value="0:00">0:00</option>
+                <option value="0:30">0:30</option>
+                <option value="1:00">1:00</option>
+                <option value="1:30">1:30</option>
+                <option value="2:00">2:00</option>
+                <option value="2:30">2:30</option>
+                <option value="3:00">3:00</option>
+                <option value="3:30">3:30</option>
+                <option value="4:00">4:00</option>
+                <option value="4:30">4:30</option>
+                <option value="5:00">5:00</option>
+                <option value="5:30">5:30</option>
+                <option value="6:00">6:00</option>
+                <option value="6:30">6:30</option>
+                <option value="7:00">7:00</option>
+                <option value="7:30">7:30</option>
+                <option value="8:00">8:00</option>
+                <option value="8:30">8:30</option>
+                <option value="9:00">9:00</option>
+                <option value="9:30">9:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                </field>
+                <field name="nome" label="Nome da Programação" size="60" type="text" />
+                <field name="comunicador" label="Nome do Comunicador" size="60" type="text" />
+              </fieldset>
+            </fields>
+          </field>
+        </fieldset>
+        <fieldset name="advanced">
+          <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+          <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+          <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
+            <option value="1">JGLOBAL_USE_GLOBAL</option>
+            <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+          </field>
+          <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+          <field name="cachemode" type="hidden" default="static" >
+            <option value="static"></option>
+          </field>
+        </fieldset>
+      </fields>
+    </config>
+  </extension>
