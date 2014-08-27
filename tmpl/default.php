@@ -28,12 +28,11 @@ JHtml::_('script', 'mod_broadcasters/script.js', array(), true);
 JHtml::_('stylesheet', 'mod_broadcasters/style.css', array(), true);
 
 ?>
- <ul>
+ <ul class="pmbr">
  	<?php foreach ($rows as $row): ?>
 	<li>
-		<?php echo $row[0]; ?> de <?php echo $row[1]; ?> as <?php echo $row[2]; ?> - <?php echo $row[3]; ?>
-		<?php if (!empty($row[4])): ?>
-		com <?php echo $row[4]; ?>
+		<span class="pmbr_zero"><?php echo $row[0]; ?></span><span class="pmbr_one"> <?php echo $row[1]; ?></span><span class="pmbr_two"><?php echo $row[2]; ?></span><span class="pmbr_three"><?php echo $row[3]; ?></span><span class="pmbr_four"><?php if (!empty($row[4])): ?>
+		com <?php echo $row[4]; ?></span>
 		<?php endif; ?>
 	</li> 
  	<?php endforeach; ?>
