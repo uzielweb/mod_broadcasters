@@ -26,6 +26,5 @@ require_once dirname(__FILE__) . '/helper.php';
 
 $class_sfx = htmlspecialchars($params->get('class_sfx'));
 
-$diasdasemana = json_decode($params->get('horarios'));
 
 require(JModuleHelper::getLayoutPath('mod_broadcasters', $params->get('layout', 'default')));
