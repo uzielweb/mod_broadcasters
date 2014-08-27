@@ -21,7 +21,7 @@ defined('_JEXEC') or die;
 require_once dirname(__FILE__) . '/helper.php';
 
 
-
+$diasdasemana = json_decode($params->get('horarios'));
 
 
 $class_sfx = htmlspecialchars($params->get('class_sfx'));
